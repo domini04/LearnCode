@@ -7,6 +7,6 @@ with open('practice.csv', 'w') as csv_file:
   writer = csv.DictWriter(csv_file, fieldnames=fields)
 
   writer.writeheader()
-    #writer.writerow({'이름':'짱구','수학':90,'영어':100})
+    #writer.writerow({'이름':'짱구','수학':90,'영어':100})  이렇게도 가능
   for item in z:
     writer.writerow(item)
