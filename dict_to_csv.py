@@ -10,11 +10,3 @@ with open('practice.csv', 'w') as csv_file:
     #writer.writerow({'이름':'짱구','수학':90,'영어':100})
   for item in z:
     writer.writerow(item)
-
-#dict를 json으로 만들어보기
-
-zzang = {'이름':'짱구','수학':90,'영어':100}
-import json
-with open('practice2.csv', 'w') as json_file:
-  for item in z:
-    json.dump(item, json_file)
